@@ -1,4 +1,4 @@
-﻿FROM microsoft/aspnet
+FROM microsoft/aspnet
 
 COPY . /app
 WORKDIR /app
