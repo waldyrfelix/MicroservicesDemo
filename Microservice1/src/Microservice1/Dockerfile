@@ -1,8 +1,10 @@
 FROM microsoft/aspnet
 
-COPY . /app
+ADD . /app
 WORKDIR /app
+
 RUN dnu restore
 
 EXPOSE 5000
-RUN dnx . kestrel
+
+ENTRYPOINT dnx . kestrel
