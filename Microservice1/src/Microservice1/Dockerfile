@@ -2,7 +2,7 @@ FROM microsoft/aspnet
 
 COPY . /app
 WORKDIR /app
-RUN ["dnu", "restore"]
+RUN dnu restore
 
 EXPOSE 5000
 ENTRYPOINT ["dnx", "kestrel"]
