@@ -14,6 +14,5 @@ namespace Microservice1.Controllers
         {
             return new { microservice = "Produtos em estoque" };
         }
-
     }
 }
